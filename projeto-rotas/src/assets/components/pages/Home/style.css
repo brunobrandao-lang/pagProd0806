@@ -1,0 +1,41 @@
+    .page-home {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+    
+    /* Animação de entrada (Agilidade) */
+    animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .page-home h1 {
+    font-size: 2.8rem;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    }
+
+    .page-home p {
+    font-size: 1.15rem;
+    color: #475569;
+    line-height: 1.8;
+    text-align: justify;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    border-left: 4px solid #2563eb; /* Detalhe dinâmico na lateral */
+    }
+
+    /* Keyframes para o efeito de transição de entrada */
+    @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }

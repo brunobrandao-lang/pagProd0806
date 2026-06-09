@@ -1,0 +1,65 @@
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+    /* Logo da Empresa */
+    .header-logo {
+    text-decoration: none;
+    }
+
+    header h1 {
+    font-size: 1.4rem;
+    color: #0f172a; /* Azul escuro corporativo */
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, #0f172a, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    /* Navegação */
+    header nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    }
+
+    /* Remove estilos padrões das tags do React Router */
+    header nav m, 
+    header nav a {
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+    }
+
+    /* Efeito Visual de Agilidade (Barra que surge ao passar o mouse) */
+    header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb; /* Azul Elétrico */
+    transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    header nav a:hover {
+    color: #2563eb;
+    }
+
+    header nav a:hover::after {
+    width: 100%;
+    }
